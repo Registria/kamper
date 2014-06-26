@@ -1,0 +1,289 @@
+--- 
+recorded_with: VCR 2.9.2
+http_interactions: 
+- request: 
+    method: post
+    uri: https://connecteddata.host4kb.com/api.php
+    body: 
+      string: |
+        <?xml version="1.0" ?><methodCall><methodName>get.Article</methodName><params><param><value><string>cb15faf01551d83aa1c6f517549531c5</string></value></param><param><value><string>AA-00402</string></value></param><param><value><string>N</string></value></param></params></methodCall>
+
+    headers: 
+      Content-Type: 
+      - text/xml; charset=utf-8
+      User-Agent: 
+      - XMLRPC::Client (Ruby 1.8.7)
+      Content-Length: 
+      - "283"
+      Accept: 
+      - "*/*"
+      Connection: 
+      - close
+  response: 
+    status: 
+      code: 200
+      message: OK
+    headers: 
+      Cache-Control: 
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      Server: 
+      - Apache/2.2.14 (Ubuntu)
+      Date: 
+      - Wed, 25 Jun 2014 19:46:13 GMT
+      Content-Type: 
+      - text/xml
+      Pragma: 
+      - no-cache
+      Set-Cookie: 
+      - KMPSESS=cb15faf01551d83aa1c6f517549531c5; path=/; HttpOnly
+      P3p: 
+      - CP="IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"
+      Expires: 
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Content-Length: 
+      - "3919"
+      X-Powered-By: 
+      - PHP/5.3.2-1ubuntu4.21
+      Connection: 
+      - close
+      Vary: 
+      - Accept-Encoding
+    body: 
+      string: |-
+        <?xml version="1.0" encoding="UTF-8"?>
+        <methodResponse>
+        <params>
+        <param>
+        <value>
+        <struct>
+        <member>
+        <name>faqId</name>
+        <value>
+        <int>329</int>
+        </value>
+        </member>
+        <member>
+        <name>code</name>
+        <value>
+        <string>AA-00402</string>
+        </value>
+        </member>
+        <member>
+        <name>answer</name>
+        <value>
+        <base64>UEhBK1ZHaGxJSEIxY25CdmMyVWdiMllnZEdocGN5QmpZWFJsWjI5eWVTQnBjeUIwYnlCb1lYWmxJR0VnY0hWaWJHbGpJSEJ5YVhacGJHVm5aU0JrYjJOMWJXVnVkQ0IwYUdGMElHUnZaWE1nYm05MElHRndjR1ZoY2lCcGJpQnlaV2QxYkdGeUlITmxZWEpqYUNCeVpYTjFiSFJ6SUdKMWRDQjBhR0YwSUdOaGJpQmlaU0JqWVd4c1pXUWdjSFZpYkdsamJIa2dkbWxoSUdFZ1puVnVZM1JwYjI0Z1pXMWlaV1JrWldRZ2FXNGdZVzV2ZEdobGNpQndZV2RsTGladVluTndPend2Y0Q0OGNENVVhR1Z6WlNCaGNtVWdkWE5sWkNCbWIzSWdjSEp2ZG1sa2FXNW5JR2hsYkhBZ1kyOXVkR1Z1ZEN3Z2QyaHBZMmdnYVhNZ2RIbHdhV05oYkd4NUlHRWdZMjl1ZEdWNGRIVmhiR3g1SUdWa2FYUmxaQ0IyWlhKemFXOXVJRzltSUdGdUlHRnlkR2xqYkdVZ2QyaHBZMmdnYUdGeklHRWdjbVZrZFc1a1lXNTBJR1oxYkd3Z2NIVmliR2xqSUhabGNuTnBiMjRnYVc0Z2RHaGxJQ0pRZFdKc2FXTWlJR05oZEdWbmIzSjVMaVp1WW5Od096d3ZjRDQ4Y0Q0OFluSStQQzl3UGp4d1BqeGljajQ4TDNBK1BIQStQR0p5UGp3dmNENDhjRDQ4WW5JK1BDOXdQZz09</base64>
+        </value>
+        </member>
+        <member>
+        <name>question</name>
+        <value>
+        <base64>VW05c1pTQlVaWE4wSUVSdll6b2dVSFZpYkdsalgwaHBaR1JsYmlCallYUmxaMjl5ZVE9PQ==</base64>
+        </value>
+        </member>
+        <member>
+        <name>featured</name>
+        <value>
+        <string>N</string>
+        </value>
+        </member>
+        <member>
+        <name>freeAccess</name>
+        <value>
+        <string>Y</string>
+        </value>
+        </member>
+        <member>
+        <name>author_id</name>
+        <value>
+        <int>4</int>
+        </value>
+        </member>
+        <member>
+        <name>editor_id</name>
+        <value>
+        <int>4</int>
+        </value>
+        </member>
+        <member>
+        <name>date</name>
+        <value>
+        <dateTime.iso8601>20131118T18:29:26</dateTime.iso8601>
+        </value>
+        </member>
+        <member>
+        <name>rating</name>
+        <value>
+        <int>0</int>
+        </value>
+        </member>
+        <member>
+        <name>views</name>
+        <value>
+        <int>0</int>
+        </value>
+        </member>
+        <member>
+        <name>lastEditDate</name>
+        <value>
+        <dateTime.iso8601>20131118T18:30:40</dateTime.iso8601>
+        </value>
+        </member>
+        <member>
+        <name>public</name>
+        <value>
+        <boolean>0</boolean>
+        </value>
+        </member>
+        <member>
+        <name>author_login</name>
+        <value>
+        <string>David Hill</string>
+        </value>
+        </member>
+        <member>
+        <name>editor_login</name>
+        <value>
+        <string>David Hill</string>
+        </value>
+        </member>
+        <member>
+        <name>attaches</name>
+        <value>
+        <array>
+        <data>
+        </data>
+        </array>
+        </value>
+        </member>
+        <member>
+        <name>publicStartDate</name>
+        <value>
+        <struct>
+        <member>
+        <name>real</name>
+        <value>
+        <dateTime.iso8601>20131118T18:27:21</dateTime.iso8601>
+        </value>
+        </member>
+        <member>
+        <name>formatted</name>
+        <value>
+        <dateTime.iso8601>20131118T18:27:21</dateTime.iso8601>
+        </value>
+        </member>
+        </struct></value>
+        </member>
+        <member>
+        <name>publicEndDate</name>
+        <value>
+        <struct>
+        <member>
+        <name>real</name>
+        <value>
+        <string></string>
+        </value>
+        </member>
+        <member>
+        <name>formatted</name>
+        <value>
+        <string></string>
+        </value>
+        </member>
+        </struct></value>
+        </member>
+        <member>
+        <name>question_url</name>
+        <value>
+        <string>Role-Test-Doc%3A-Public_Hidden-category</string>
+        </value>
+        </member>
+        <member>
+        <name>comments</name>
+        <value>
+        <array>
+        <data>
+        </data>
+        </array>
+        </value>
+        </member>
+        <member>
+        <name>customFields</name>
+        <value>
+        <struct>
+        <member>
+        <name>total</name>
+        <value>
+        <int>0</int>
+        </value>
+        </member>
+        <member>
+        <name>fields</name>
+        <value>
+        <array>
+        <data>
+        </data>
+        </array>
+        </value>
+        </member>
+        </struct></value>
+        </member>
+        <member>
+        <name>customFieldsValues</name>
+        <value>
+        <array>
+        <data>
+        </data>
+        </array>
+        </value>
+        </member>
+        <member>
+        <name>relatedArticles</name>
+        <value>
+        <array>
+        <data>
+        </data>
+        </array>
+        </value>
+        </member>
+        <member>
+        <name>categories</name>
+        <value>
+        <array>
+        <data>
+        <value>
+        <struct>
+        <member>
+        <name>catID</name>
+        <value>
+        <int>21</int>
+        </value>
+        </member>
+        <member>
+        <name>catName</name>
+        <value>
+        <string>Public_Hidden</string>
+        </value>
+        </member>
+        <member>
+        <name>fullPath</name>
+        <value>
+        <string>Public_Hidden</string>
+        </value>
+        </member>
+        </struct></value>
+        </data>
+        </array>
+        </value>
+        </member>
+        <member>
+        <name>voters</name>
+        <value>
+        <string></string>
+        </value>
+        </member>
+        </struct></value>
+        </param>
+        </params>
+        </methodResponse>
+    http_version: 
+  recorded_at: Wed, 25 Jun 2014 19:48:03 GMT

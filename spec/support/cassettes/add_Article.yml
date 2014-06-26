@@ -1,0 +1,108 @@
+--- 
+http_interactions: 
+- request: 
+    method: post
+    uri: https://connecteddata.host4kb.com/api.php
+    body: 
+      string: |
+        <?xml version="1.0" ?><methodCall><methodName>add.Article</methodName><params><param><value><string>cb15faf01551d83aa1c6f517549531c5</string></value></param><param><value><string>My New Test Article</string></value></param><param><value><string>&lt;h1&gt;Quidem dolorum&lt;/h1&gt;&lt;table&gt;
+              &lt;thead&gt;
+              &lt;tr&gt;
+              &lt;th&gt;Aut&lt;/th&gt;
+              &lt;th&gt;Quasi&lt;/th&gt;
+              &lt;th&gt;Praesentium&lt;/th&gt;
+              &lt;th&gt;Maxime&lt;/th&gt;
+              &lt;/tr&gt;
+              &lt;/thead&gt;
+              &lt;tbody&gt;&lt;tr&gt;
+                        &lt;td&gt;Dignissimos&lt;/td&gt;
+                        &lt;td&gt;Sunt&lt;/td&gt;
+                        &lt;td&gt;Vel&lt;/td&gt;
+                        &lt;td&gt;&lt;a href="#commodi" title="Quod dolor"&gt;Illum laudantium&lt;/a&gt;&lt;/td&gt;
+                      &lt;/tr&gt;&lt;/tbody&gt;
+              &lt;/table&gt;&lt;h2&gt;Aut quam&lt;/h2&gt;
+              &lt;ol&gt;&lt;li&gt;Necessitatibus totam excepturi quae et ipsa aperiam molestiae ut. Eveniet numquam aut dicta ducimus illo. Modi consequatur officia laborum facere et.&lt;/li&gt;&lt;li&gt;Rem porro reprehenderit quos a. Maxime sed nemo esse. Quia voluptates delectus occaecati perferendis voluptate.&lt;/li&gt;&lt;li&gt;Dignissimos harum iusto alias. Et sed labore et molestiae minima autem iure. Suscipit officiis aliquid ea.&lt;/li&gt;&lt;/ol&gt;
+              &lt;blockquote&gt;&lt;p&gt;Eos officia voluptatem fuga. Est et laboriosam at. Molestiae sed rerum voluptatem est.&lt;br&gt;Velit a voluptas non expedita officiis laudantium adipisci et. Blanditiis expedita eveniet reprehenderit eum non tenetur assumenda. Enim consectetur nam nesciunt. Soluta sit est aliquid et placeat et.&lt;br&gt;Excepturi voluptas odit voluptates velit provident quisquam veniam quos. Fugit nulla aspernatur doloribus. Quasi molestiae voluptatibus rem iste esse minus. Eius animi nihil sed consectetur. Est eius odio qui.&lt;/p&gt;&lt;/blockquote&gt;
+              &lt;h3&gt;Et facere&lt;/h3&gt;
+              &lt;ul&gt;&lt;li&gt;Reiciendis culpa quo quia eius.&lt;/li&gt;&lt;/ul&gt;
+              &lt;pre&gt;&lt;code&gt;
+              #labore h1 a {
+                display: block;
+                width: 300px;
+                height: 80px;
+              }
+              &lt;/code&gt;&lt;/pre&gt;</string></value></param><param><value><array><data><value><i4>18</i4></value><value><i4>7</i4></value></data></array></value></param></params></methodCall>
+
+    headers: 
+      Content-Length: 
+      - "2334"
+      Accept: 
+      - "*/*"
+      User-Agent: 
+      - XMLRPC::Client (Ruby 1.8.7)
+      Content-Type: 
+      - text/xml; charset=utf-8
+      Connection: 
+      - close
+  response: 
+    status: 
+      code: 200
+      message: OK
+    headers: 
+      Cache-Control: 
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      Vary: 
+      - Accept-Encoding
+      Content-Length: 
+      - "391"
+      Server: 
+      - Apache/2.2.14 (Ubuntu)
+      X-Powered-By: 
+      - PHP/5.3.2-1ubuntu4.21
+      Pragma: 
+      - no-cache
+      Content-Type: 
+      - text/xml
+      Date: 
+      - Thu, 26 Jun 2014 22:27:11 GMT
+      Expires: 
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Connection: 
+      - close
+      Set-Cookie: 
+      - KMPSESS=1f5e0490557aca828d172ec246ef0794; path=/; HttpOnly
+      P3p: 
+      - CP="IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"
+    body: 
+      string: |-
+        <?xml version="1.0" encoding="UTF-8"?>
+        <methodResponse>
+        <params>
+        <param>
+        <value>
+        <struct>
+        <member>
+        <name>done</name>
+        <value>
+        <boolean>1</boolean>
+        </value>
+        </member>
+        <member>
+        <name>title</name>
+        <value>
+        <string>My-New-Test-Article</string>
+        </value>
+        </member>
+        <member>
+        <name>code</name>
+        <value>
+        <string>AA-01105</string>
+        </value>
+        </member>
+        </struct></value>
+        </param>
+        </params>
+        </methodResponse>
+    http_version: 
+  recorded_at: Thu, 26 Jun 2014 22:29:03 GMT
+recorded_with: VCR 2.9.2

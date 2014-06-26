@@ -1,0 +1,141 @@
+--- 
+recorded_with: VCR 2.9.2
+http_interactions: 
+- request: 
+    method: post
+    uri: https://connecteddata.host4kb.com/api.php
+    body: 
+      string: |
+        <?xml version="1.0" ?><methodCall><methodName>get.Article</methodName><params><param><value><string>cb15faf01551d83aa1c6f517549531c5</string></value></param><param><value><string>AA-00402</string></value></param><param><value><string>Y</string></value></param></params></methodCall>
+
+    headers: 
+      Content-Type: 
+      - text/xml; charset=utf-8
+      User-Agent: 
+      - XMLRPC::Client (Ruby 1.8.7)
+      Content-Length: 
+      - "283"
+      Accept: 
+      - "*/*"
+      Connection: 
+      - close
+  response: 
+    status: 
+      code: 200
+      message: OK
+    headers: 
+      Cache-Control: 
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      Server: 
+      - Apache/2.2.14 (Ubuntu)
+      Date: 
+      - Wed, 25 Jun 2014 19:46:11 GMT
+      Content-Type: 
+      - text/xml
+      Pragma: 
+      - no-cache
+      Set-Cookie: 
+      - KMPSESS=cb15faf01551d83aa1c6f517549531c5; path=/; HttpOnly
+      P3p: 
+      - CP="IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"
+      Expires: 
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Content-Length: 
+      - "389"
+      X-Powered-By: 
+      - PHP/5.3.2-1ubuntu4.21
+      Connection: 
+      - close
+      Vary: 
+      - Accept-Encoding
+    body: 
+      string: |-
+        <?xml version="1.0" encoding="UTF-8"?>
+        <methodResponse>
+        <fault>
+        	<value>
+        		<struct>
+        			<member>
+        				<name>faultCode</name>
+        				<value><int>1100</int></value>
+        			</member>
+        			<member>
+        				<name>faultString</name>
+        				<value><string>Operation aborted. Client have not enough permissions to perform this operation</string></value>
+        			</member>
+        		</struct>
+        	</value>
+        </fault>
+        </methodResponse>
+    http_version: 
+  recorded_at: Wed, 25 Jun 2014 19:48:02 GMT
+- request: 
+    method: post
+    uri: https://connecteddata.host4kb.com/api.php
+    body: 
+      string: |
+        <?xml version="1.0" ?><methodCall><methodName>get.Article</methodName><params><param><value><string>cb15faf01551d83aa1c6f517549531c5</string></value></param><param><value><string>AA-00402</string></value></param><param><value><string>Y</string></value></param></params></methodCall>
+
+    headers: 
+      Content-Type: 
+      - text/xml; charset=utf-8
+      User-Agent: 
+      - XMLRPC::Client (Ruby 1.8.7)
+      Cookie: 
+      - KMPSESS=cb15faf01551d83aa1c6f517549531c5
+      Content-Length: 
+      - "283"
+      Accept: 
+      - "*/*"
+      Connection: 
+      - close
+  response: 
+    status: 
+      code: 200
+      message: OK
+    headers: 
+      Cache-Control: 
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      Server: 
+      - Apache/2.2.14 (Ubuntu)
+      Date: 
+      - Wed, 25 Jun 2014 19:46:12 GMT
+      Content-Type: 
+      - text/xml
+      Pragma: 
+      - no-cache
+      Set-Cookie: 
+      - KMPSESS=cb15faf01551d83aa1c6f517549531c5; path=/; HttpOnly
+      P3p: 
+      - CP="IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"
+      Expires: 
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Content-Length: 
+      - "389"
+      X-Powered-By: 
+      - PHP/5.3.2-1ubuntu4.21
+      Connection: 
+      - close
+      Vary: 
+      - Accept-Encoding
+    body: 
+      string: |-
+        <?xml version="1.0" encoding="UTF-8"?>
+        <methodResponse>
+        <fault>
+        	<value>
+        		<struct>
+        			<member>
+        				<name>faultCode</name>
+        				<value><int>1100</int></value>
+        			</member>
+        			<member>
+        				<name>faultString</name>
+        				<value><string>Operation aborted. Client have not enough permissions to perform this operation</string></value>
+        			</member>
+        		</struct>
+        	</value>
+        </fault>
+        </methodResponse>
+    http_version: 
+  recorded_at: Wed, 25 Jun 2014 19:48:02 GMT

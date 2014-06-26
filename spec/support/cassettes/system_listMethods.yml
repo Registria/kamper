@@ -1,0 +1,141 @@
+--- 
+recorded_with: VCR 2.9.2
+http_interactions: 
+- request: 
+    method: post
+    uri: https://connecteddata.host4kb.com/api.php
+    body: 
+      string: |
+        <?xml version="1.0" ?><methodCall><methodName>system.listMethods</methodName><params><param><value><string>cb15faf01551d83aa1c6f517549531c5</string></value></param></params></methodCall>
+
+    headers: 
+      Content-Type: 
+      - text/xml; charset=utf-8
+      User-Agent: 
+      - XMLRPC::Client (Ruby 1.8.7)
+      Accept: 
+      - "*/*"
+      Content-Length: 
+      - "187"
+      Connection: 
+      - close
+  response: 
+    status: 
+      code: 200
+      message: OK
+    headers: 
+      Content-Type: 
+      - text/xml
+      X-Powered-By: 
+      - PHP/5.3.2-1ubuntu4.21
+      Server: 
+      - Apache/2.2.14 (Ubuntu)
+      Content-Length: 
+      - "1636"
+      Date: 
+      - Wed, 25 Jun 2014 19:02:41 GMT
+      Vary: 
+      - Accept-Encoding
+      Connection: 
+      - close
+    body: 
+      string: |-
+        <?xml version="1.0" encoding="UTF-8"?>
+        <methodResponse>
+        <params>
+        <param>
+        <value>
+        <array>
+        <data>
+        <value>
+        <string>activate.User</string>
+        </value>
+        <value>
+        <string>add.Article</string>
+        </value>
+        <value>
+        <string>add.Category</string>
+        </value>
+        <value>
+        <string>add.Term</string>
+        </value>
+        <value>
+        <string>add.User</string>
+        </value>
+        <value>
+        <string>deactivate.User</string>
+        </value>
+        <value>
+        <string>delete.User</string>
+        </value>
+        <value>
+        <string>get.Article</string>
+        </value>
+        <value>
+        <string>get.Article.comments</string>
+        </value>
+        <value>
+        <string>get.Article.list</string>
+        </value>
+        <value>
+        <string>get.Article.list.featured</string>
+        </value>
+        <value>
+        <string>get.Article.list.mostDiscussed</string>
+        </value>
+        <value>
+        <string>get.Article.list.mostPopular</string>
+        </value>
+        <value>
+        <string>get.Article.list.recentlyAdded</string>
+        </value>
+        <value>
+        <string>get.Article.list.recentlyUpdated</string>
+        </value>
+        <value>
+        <string>get.Article.list.topRated</string>
+        </value>
+        <value>
+        <string>get.Category.list</string>
+        </value>
+        <value>
+        <string>get.Category.tree</string>
+        </value>
+        <value>
+        <string>get.Term.list</string>
+        </value>
+        <value>
+        <string>search.Articles</string>
+        </value>
+        <value>
+        <string>search.Categories</string>
+        </value>
+        <value>
+        <string>search.SuggestedArticles</string>
+        </value>
+        <value>
+        <string>search.Suggests</string>
+        </value>
+        <value>
+        <string>search.Terms</string>
+        </value>
+        <value>
+        <string>system.listMethods</string>
+        </value>
+        <value>
+        <string>system.methodHelp</string>
+        </value>
+        <value>
+        <string>system.methodSignature</string>
+        </value>
+        <value>
+        <string>system.multicall</string>
+        </value>
+        </data>
+        </array>
+        </value>
+        </param>
+        </params>
+        </methodResponse>
+    http_version: 
+  recorded_at: Wed, 25 Jun 2014 19:04:31 GMT
