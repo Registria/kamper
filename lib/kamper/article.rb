@@ -45,7 +45,8 @@ module Kamper
           :public_only => args[:public_only].nil? ? 'Y' : (args[:public_only] ? 'Y' : 'N'), 
         }
         articles = connection.call(cmd, p[:category_id], p[:starting_shift], p[:limit], p[:public_only])
-        articles.map do |article|
+
+        articles['articles'].map do |article|
           article['question'] = decode article['question']
           article['answer'] = decode article['answer']
           article["categories"] = article["categories"].map do |category| 
