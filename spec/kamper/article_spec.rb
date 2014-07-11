@@ -2,16 +2,13 @@ require 'spec_helper'
 
 describe Kamper::Article do
   let(:config){ 
-    { 
-      :host => 'connecteddata.host4kb.com', 
-      :path => '/api.php',
-      :api_key => 'cb15faf01551d83aa1c6f517549531c5',
-      :use_ssl => true
+    {
+      :api_key => 'cb15faf01551d83aa1c6f517549531c5'
     } 
   }
 
   before do
-    Kamper::Article.connection = Kamper::Connection.new(config)
+    Kamper::Article.new_connection(config)
   end
 
   describe '.add' do

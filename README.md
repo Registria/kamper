@@ -23,9 +23,10 @@ Or install it yourself as:
 
 ## Usage
 
-### Connect to KnowledgeBase Manager Pro API using your credentials (use your own api key)
+### Connect to KnowledgeBase Manager Pro API using your credentials (Shown below with 
+defaults, just make sure you use your own api key)
 ```
-Kamper::Article.connection = Kamper::Connection.new({
+Kamper::Connection.new_connection({
   :host => 'connecteddata.host4kb.com', 
   :path => '/api.php',
   :api_key => YOUR_API_KEY_GOES_HERE,
