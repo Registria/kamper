@@ -46,7 +46,7 @@ module Kamper
         }
         articles = connection.call(cmd, p[:category_id], p[:starting_shift], p[:limit], p[:public_only])
 
-        articles['articles'].map do |article|
+        articles['articles'] = articles['articles'].map do |article|
           article['question'] = decode article['question']
           article['answer'] = decode article['answer']
           article["categories"] = article["categories"].map do |category| 
@@ -59,6 +59,8 @@ module Kamper
           end
           article
         end
+        
+        articles
       end
     end  
   end
