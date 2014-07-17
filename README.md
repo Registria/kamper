@@ -23,8 +23,7 @@ Or install it yourself as:
 
 ## Usage
 
-### Connect to KnowledgeBase Manager Pro API using your credentials (Shown below with 
-defaults, just make sure you use your Knowledge Base Pro domain and api key)
+### Connect to KnowledgeBase Manager Pro API using your credentials (Shown below with defaults, just make sure you use your Knowledge Base Pro domain and api key)
 ```
 Kamper::Article.new_connection({
   :host => YOUR_KB_PRO_DOMAIN_GOES_HERE, 
